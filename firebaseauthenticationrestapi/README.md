@@ -35,3 +35,8 @@ This project demonstrates how to use Firebase Authentication via its REST API wi
 ## Useful Links
 - [Firebase Auth REST API Docs](https://firebase.google.com/docs/reference/rest/auth)
 - [Firebase Console](https://console.firebase.google.com/)
+
+Member: Joreval Orpilla, Wilson Abalos, Jerome Benaso, Yousef Ravancho
+
+
+
