@@ -31,3 +31,7 @@ For production, always use HTTPS and follow security best practices.
 Useful Links
 Firebase Auth REST API Docs
 Firebase Console
+
+Member: Joreval Orpilla
+        Wilson Abalos
+        Jerome Benaso
