@@ -2,34 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Firebase Authentication REST API</title>
+  <title>Facebook Graph API Demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header class="app-header">
-    <h1>Firebase Auth</h1>
-    <button id="themeToggle" class="icon-btn">🌙</button>
+    <h1>Facebook Graph API</h1>
   </header>
 
   <main>
-    <div class="auth-container">
-      <h2>Welcome</h2>
-      <p class="subtitle">Sign in or create an account</p>
+    <div class="card">
+      <h2>User Profile</h2>
+      <p class="subtitle">Fetch Facebook user data using Graph API</p>
 
-      <input type="email" id="email" placeholder="Email address">
-      <input type="password" id="password" placeholder="Password">
+      <input
+        type="password"
+        id="token"
+        placeholder="EAAL2UMpcp7sBQfhG2LLX1WxB3An5Q8JZA6DMZB0oRtEMdLFuwJ4Dl1VXYIwi181ZBaJL7Ww5Yy1FzxsVBia4CqrAvjzZCCChGlHVs3ZB72BInfpX0f4vIsCWQnlO8TLXI9zGHe5nd2Ld3tNZAmALs34hyYZCJ2QAzlJYZC01BEzY4IhBC39SBZAf3VlU0ZBHZAikA32DlFFh3OcfzyW1LOTzrQ5mZCAzoQZAi8N5GjJFjqzN06vqUzo4xXW1noJzKF28rqLp2EZC8QL28dGZBReBB0EpJt1K5aI36IZD"
+      >
 
-      <button id="registerBtn" class="secondary">Register</button>
-      <button id="loginBtn" class="primary">Login</button>
-      <button id="logoutBtn" class="danger" style="display:none;">Logout</button>
+      <button id="fetchBtn">Fetch Profile</button>
+
+      <div id="result" class="result">
+        <img id="profilePic" hidden>
+        <p id="fullName"></p>
+        <p id="firstName"></p>
+        <p id="lastName"></p>
+        <p id="userId"></p>
+        <a id="profileLink" target="_blank" hidden></a>
+      </div>
 
       <p id="status" class="status"></p>
     </div>
   </main>
 
   <footer>
-    <p>Powered by Firebase Authentication REST API</p>
+    <p>Powered by Facebook Graph API</p>
   </footer>
 
   <script src="script.js"></script>
