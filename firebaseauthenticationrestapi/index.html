@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Firebase Authentication REST API</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>Firebase Auth</h1>
+    <button id="themeToggle" class="icon-btn">🌙</button>
+  </header>
+
+  <main>
+    <div class="auth-container">
+      <h2>Welcome</h2>
+      <p class="subtitle">Sign in or create an account</p>
+
+      <input type="email" id="email" placeholder="Email address">
+      <input type="password" id="password" placeholder="Password">
+
+      <button id="registerBtn" class="secondary">Register</button>
+      <button id="loginBtn" class="primary">Login</button>
+      <button id="logoutBtn" class="danger" style="display:none;">Logout</button>
+
+      <p id="status" class="status"></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Powered by Firebase Authentication REST API</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
